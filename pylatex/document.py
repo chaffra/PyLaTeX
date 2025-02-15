@@ -195,7 +195,7 @@ class Document(Environment):
         self.color = False
         self.meta_data = False
 
-        self.append(Command(command=font_size))
+        #self.append(Command(command=font_size))
 
     def _propagate_packages(self):
         r"""Propogate packages.
