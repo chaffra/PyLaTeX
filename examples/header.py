@@ -58,7 +58,7 @@ def generate_header():
         doc.append(LineBreak())
         doc.append(MediumText(bold("As at:")))
 
-    doc.generate_pdf("header", clean_tex=False)
+    doc.generate_pdf("./build/header", clean_tex=False)
 
 
 generate_header()
