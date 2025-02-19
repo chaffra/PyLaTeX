@@ -296,7 +296,10 @@ class Document(Environment):
         self.generate_tex(filepath)
 
         if compiler is not None:
-            compilers = ((compiler, []),)
+            if isinstance(compiler, str):
+                compilers = ((compiler, []),)
+            else:
+                compilers = compiler
         else:
             latexmk_args = ["--pdf"]
 
