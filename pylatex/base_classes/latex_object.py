@@ -51,7 +51,7 @@ class LatexObject(metaclass=_CreatePackages):
     _repr_attributes_mapping = None
 
     #: Set on a class to make instances default to a certain kind of escaping
-    _default_escape = True
+    _default_escape = False
 
     #: Only set this directly by changing the cls.escape
     _escape = None
